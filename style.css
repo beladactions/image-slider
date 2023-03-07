@@ -1,0 +1,85 @@
+body {
+    background-color: aquamarine;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+img   {
+    border: 8px solid black;
+    border-radius: 10px;
+
+}
+
+/* Slider container */
+.slider-container {
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Slider */
+  .slider {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slider img.active {
+    opacity: 1;
+  }
+  
+  /* Slider controls */
+  .controls {
+    position: absolute;
+    margin-top: 20px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .controls button {
+    
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .controls button.prev {
+    float: left;
+  }
+  
+  .controls button.next {
+    float: right;
+  }
+  
+  .controls button.download {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  footer {
+    text-align: center;
+    font-weight: bolder;
+  }
+  
